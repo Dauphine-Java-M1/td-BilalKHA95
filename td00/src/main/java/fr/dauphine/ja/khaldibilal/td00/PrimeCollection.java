@@ -13,7 +13,7 @@ public class PrimeCollection
 	
 	public static void main(String args[]) {
 		PrimeCollection test = new PrimeCollection() ; 
-		test.initRandom(100, 999);
+		test.initRandom(100, 1999);
 		test.printPrimes();
 		
 		
