@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class PrimeCollectionTest
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class AppTest
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+    public PrimeCollectionTest( String testName )
     {
         super( testName );
     }
@@ -25,14 +25,39 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( PrimeCollectionTest.class );
     }
 
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testPrimeCollection()
     {
-        assertTrue( true );
+    	if(this.test0IsPrime(0)) {
+    		assertTrue( true );
+    	}else {assertTrue( false );}
+    	
+    	
+    	if(this.testTwoIsPrime(2)) {
+    		assertTrue( true );
+    	}else {assertTrue(false);}
+    	
+    	if(!this.test9IsNotPrime(9)) {
+    		assertTrue(true);
+    	}else {assertTrue(false);}
+        
     }
+    
+    public boolean test0IsPrime(int n) {
+    	PrimeCollection test = new PrimeCollection() ; 
+    	return test.isPrime(0) ;
+    	}
+    public boolean testTwoIsPrime(int n) {
+    	PrimeCollection test = new PrimeCollection() ; 
+    	return test.isPrime(2) ;
+    	}
+    public boolean test9IsNotPrime(int n) {
+    	PrimeCollection test = new PrimeCollection() ; 
+    	return test.isPrime(9) ;
+    	}
 }
