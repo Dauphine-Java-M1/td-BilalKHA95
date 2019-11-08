@@ -1,0 +1,4 @@
+---Exercice1---
+
+5/On voit la modification qu'on a effectué après le commit 
+
