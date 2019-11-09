@@ -42,6 +42,15 @@ indexOf utilise la méthode equals il faut donc redéfinir la méthode equals po
 
 6/Si dans getCenter on renvoie la reference du centre du cercle alors si on modifie ce point il sera aussi modifié dans le cercle. On peut renvoyer un nouveau point et non pas une references pour régler ce problèmes .
 
+---Exercice5---
+
+1/Oui c'est interessant car un ring est un cercle juste avec un nouvel attribut qui correspond au rayon interne du cercle interne 
+
+4/Il va faire appel à la méthode toString de la classe circle qui n'affiche donc pas le rayon interne on redéfinit donc la méthode toString dans Ring 
+
+
+
+
 
 
 
