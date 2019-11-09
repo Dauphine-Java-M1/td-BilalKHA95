@@ -16,11 +16,6 @@ public class PointTest {
 		list.add(p1);
 		System.out.println(list.indexOf(p2));
 		System.out.println(list.indexOf(p3));
-
-		
-		
-		
-		
 		
 	}
 	

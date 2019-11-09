@@ -38,6 +38,6 @@ indexOf utilise la méthode equals il faut donc redéfinir la méthode equals po
 
 1/On peut modifier le point lui meme ce qui le rend mutable dans ce cas la signature ne renverra rien void mais si on ne souhaite pas modifier le point on peut retourner un nouveau Point avec les nouveaux coordonnées en prenant en compte la translation 
 
-
+5/
 
 
