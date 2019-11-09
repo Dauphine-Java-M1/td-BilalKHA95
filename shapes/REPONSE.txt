@@ -32,6 +32,8 @@ indexOf utilise la méthode equals il faut donc redéfinir la méthode equals po
 
 5/On ajoute un element null à notre tableau , en ajoutant Objects.requirenonnull une exception est levée si on ajoute un element null. 
 
+6/pointCapacity n'est plus nécessaire car il n'y a pas de taille maximum pour une linkedList si ce n'est la mémoire du système. NbPoint et contains sont toujours utile par contre l'implementation de ces méthode existe deja dans linkedList on fait juste donc juste appel à leur implementation dans ces méthodes. 
+
 
 
 
