@@ -7,6 +7,8 @@ public class PointTest {
 		System.out.println(p.getX()+ "  " + p.getY() + "  " + Point.getNombrePoint());
 		p = new Point(10,10) ; 
 		System.out.println(p.getX()+ "  " + p.getY() + "  " + Point.getNombrePoint());
+		Point p2 = new Point(p) ; 
+		System.out.println(p2) ; 
 		
 		
 	}

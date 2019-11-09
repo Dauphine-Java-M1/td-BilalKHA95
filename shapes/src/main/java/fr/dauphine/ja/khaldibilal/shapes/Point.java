@@ -12,6 +12,11 @@ public class Point {
 		
 	}
 	
+	public Point(Point unPoint) {
+		this.x = unPoint.getX() ; 
+		this.y = unPoint.getY() ; 
+		}
+	
 	public int getX() {
 		return this.x ; 
 	}
@@ -20,7 +25,11 @@ public class Point {
 	}
 	public static int getNombrePoint() {
 		return Point.compteur ; 
-		}
+	}
+	@Override
+	public String toString() {
+		return "("+this.x+","+this.y+")" ; 
+	}
 
 
 }
