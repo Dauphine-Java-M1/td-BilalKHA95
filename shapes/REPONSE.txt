@@ -1,0 +1,24 @@
+---Exercice1---
+1/ Celà fonctionne car même sans construcuter java utilise le constructeur implicite de la classe object. Et on as accès au variable private car le main et dans la classe Point.
+
+2/C'est impossible car les arguments private ne sont pas accessible depuis l'extérieur de la classe. On peut remédier à ce problème en implémentant des getter.
+
+3/Afin de modifier les propriétés(attributs) qu'à l'intérieur de la classe à travers les méthodes de la classe (protected ou public).
+
+4/Un accesseur permet d'avoir accès aux attributs private de la classe (getter) , ou les modifier ou initialiser(si pas fait dans le constructeur) dans ce cas c'est un setter.
+
+Ici oui on doit implementer un getter 
+
+
+
+
+Exo1:
+1. Cela fonctionne car nous sommes toujours dans la classe même si le champs est private.
+2. On ne peut pas car les arguments private ne sont pas visibles en dehors de la classe. On peut remédier à ce problème en introduisant des getters et setters.
+3. Par soucis de sémantique, pour l'encapsulation on met les arguments en private car on est censé utiliser les méthodes des classes et pas leurs attribus directement.
+4. Un accesseur permet d'avoir accès aux attributs à travers une méthode, dans notre cas il nous faut un getter.
+5. Le constructeur par défaut n'est plus défini.
+6. Le constructeur ne sait plus différencier les arguments des attributs, il faut donc utiliser this.
+7. En rajoutant un compteur static.
+8. En regardant le type des variables en entrée.
+9. On override la méthode toString de la classe Object.
