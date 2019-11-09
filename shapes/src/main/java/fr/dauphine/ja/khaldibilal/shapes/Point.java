@@ -51,6 +51,10 @@ public class Point {
 		
 		
 	}
+	
+	public Point translate(int dx , int dy) {
+		return new Point(this.x+dx , this.y+dy) ;
+	}
 
 
 }

@@ -34,6 +34,10 @@ indexOf utilise la méthode equals il faut donc redéfinir la méthode equals po
 
 6/pointCapacity n'est plus nécessaire car il n'y a pas de taille maximum pour une linkedList si ce n'est la mémoire du système. NbPoint et contains sont toujours utile par contre l'implementation de ces méthode existe deja dans linkedList on fait juste donc juste appel à leur implementation dans ces méthodes. 
 
+---Exercice4---
+
+1/On peut modifier le point lui meme ce qui le rend mutable dans ce cas la signature ne renverra rien void mais si on ne souhaite pas modifier le point on peut retourner un nouveau Point avec les nouveaux coordonnées en prenant en compte la translation 
+
 
 
 
