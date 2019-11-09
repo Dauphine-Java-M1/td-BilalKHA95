@@ -30,6 +30,27 @@ public class Point {
 	public String toString() {
 		return "("+this.x+","+this.y+")" ; 
 	}
+	
+	public boolean isSameAs(Point p) {
+		if(this.x == p.getX() && this.y == p.getY())return true;
+		else return false ; 
+		
+		
+	}
+	
+	@Override
+	public boolean equals(Object o ) {
+		if(o instanceof Point) {
+			Point p = ((Point)o);
+			return this.isSameAs(p) ;
+			}else {
+			return false ; 
+			
+			
+		}
+		
+		
+	}
 
 
 }
