@@ -38,6 +38,10 @@ indexOf utilise la méthode equals il faut donc redéfinir la méthode equals po
 
 1/On peut modifier le point lui meme ce qui le rend mutable dans ce cas la signature ne renverra rien void mais si on ne souhaite pas modifier le point on peut retourner un nouveau Point avec les nouveaux coordonnées en prenant en compte la translation 
 
-5/
+5/Le problème c'est qu'on à définit les deux cercle avec le meme ce qui implique que lorsque on translate un cercle on translate aussi le point de l'autre. On peut régler ce problème en définissant un nouveau point comme centre lors de la translation.
+
+6/Si dans getCenter on renvoie la reference du centre du cercle alors si on modifie ce point il sera aussi modifié dans le cercle. On peut renvoyer un nouveau point et non pas une references pour régler ce problèmes .
+
+
 
 

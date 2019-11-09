@@ -11,7 +11,7 @@ public class Circle {
 	@Override
 	public String toString() {
 		
-		return "Centre : " +this.m_monCentre.toString() + " Rayon :" + this.m_rayon ; 
+		return "Centre : " +this.m_monCentre.toString() + " Rayon :" + this.m_rayon + " Surface : " + this.surface() ; 
 	}
 	
 	public void translate(int dx , int dy) {
@@ -19,6 +19,10 @@ public class Circle {
 		
 		
 	}
+	
+	public double surface() {
+		return Math.PI*this.m_rayon*this.m_rayon;
+		}
 	
 	
 
