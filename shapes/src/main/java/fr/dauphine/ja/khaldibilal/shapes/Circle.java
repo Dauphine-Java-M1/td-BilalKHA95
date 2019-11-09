@@ -24,6 +24,28 @@ public class Circle {
 		return Math.PI*this.m_rayon*this.m_rayon;
 		}
 	
+	public Point getCenter() {
+		return new Point(this.m_monCentre.getX() , this.m_monCentre.getY()) ; 
+		
+	}
+	
+	public boolean contains(Point p ) {
+		int distance = (int) Math.sqrt(Math.pow(this.m_monCentre.getX() - p.getX(), 2) + Math.pow(this.m_monCentre.getY()- p.getY(), 2)) ;
+		if(distance > this.m_rayon)return false;
+		else return true ;
+		
+	}
+	
+	public boolean contains(Point p , Circle... cercle) {
+		for(int i=0;i<cercle.length;i++) {
+			int distance = (int) Math.sqrt(Math.pow(cercle[i].m_monCentre.getX() - p.getX(), 2) + Math.pow(cercle[i].m_monCentre.getY()- p.getY(), 2)) ;
+			if(distance <= this.m_rayon)return true ;
+			}
+		return false ; 
+		
+		
+	}
+	
 	
 
 }
