@@ -1,6 +1,6 @@
-package fr.dauphine.ja.khaldibilal.shapes;
+package fr.dauphine.ja.khaldibilal.shapes.model;
 
-public class Point {
+public class Point extends Shape{
 	private int x ; 
 	private int y ; 
 	private static int compteur = 0 ; 

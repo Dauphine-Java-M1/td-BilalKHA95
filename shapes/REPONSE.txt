@@ -48,6 +48,26 @@ indexOf utilise la méthode equals il faut donc redéfinir la méthode equals po
 
 4/Il va faire appel à la méthode toString de la classe circle qui n'affiche donc pas le rayon interne on redéfinit donc la méthode toString dans Ring 
 
+--------------------TD2------------------------
+
+1/Graphics et l'objet qui représente le contexte graphique de notre affichage , il permet de dessiner des formes 
+Graphics2D offre + d'options que graphics 
+
+un JPanel est un composant de type conteneur dont la vocation est d'accueillir d'autres objets de même type ou des objets de type composant (boutons, cases à cocher…).
+
+Graphics.Cet objet a une particularité de taille : vous ne pouvez l'utiliser que si et seulement si le système vous l'a donné via la méthodegetGraphics()d'un composant swing
+
+5/
+Cette méthode est appelée lorsque on veut afficher le JPanel ou lorsque on redimensionnement la fenêtre dans laquelle le JPanel est.  
+
+6/
+Les composants awt sont considérés comme lourds (on dit aussiHeavyWeight) car ils sont fortement liés au système d'exploitation, c'est ce dernier qui les gère. Les composants swing, eux, sont comme dessinés dans un conteneur, ils sont dit légers (on dit aussiLightWeight) ; ils n'ont pas le même rendu à l'affichage, car ce n'est plus le système d'exploitation qui les gère. Il existe également d'autres différences, comme le nombre de composants utilisables, la gestion des bordures...
+
+---------------Exercice2----------------
+
+
+
+
 
 
 

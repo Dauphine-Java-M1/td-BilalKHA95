@@ -2,6 +2,8 @@ package fr.dauphine.ja.khaldibilal.shapes;
 
 import java.util.ArrayList;
 
+import fr.dauphine.ja.khaldibilal.shapes.model.Point;
+
 public class PointTest {
 	
 	public static void main(String args[]) {

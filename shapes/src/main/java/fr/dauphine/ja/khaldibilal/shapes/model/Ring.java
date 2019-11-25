@@ -1,4 +1,4 @@
-package fr.dauphine.ja.khaldibilal.shapes;
+package fr.dauphine.ja.khaldibilal.shapes.model;
 
 public class Ring extends Circle {
 	private int m_rayonInterne ; 

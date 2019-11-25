@@ -1,8 +1,9 @@
 package fr.dauphine.ja.khaldibilal.iterables;
 
+import java.util.AbstractList;
 import java.util.Iterator;
 
-public class Panel {
+public class Panel extends AbstractList {
 	
 	
 	
@@ -36,8 +37,20 @@ public class Panel {
 				return panel1(borneinf,bornesup) ; 
 			}
 			
-		}
+		};
 		
+	}
+
+	@Override
+	public Object get(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 
