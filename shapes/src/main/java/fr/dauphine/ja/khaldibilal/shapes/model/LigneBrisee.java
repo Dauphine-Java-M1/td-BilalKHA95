@@ -1,14 +1,14 @@
-package fr.dauphine.ja.khaldibilal.shapes;
+package fr.dauphine.ja.khaldibilal.shapes.model;
 
 import java.util.LinkedList;
 import java.util.Objects;
 
-public class LigneBrisee {
-	private LinkedList m_suitePoint ; 
+public class LigneBrisee extends Shape {
+	private LinkedList<Point> m_suitePoint ; 
 	
 	
 	public LigneBrisee(int nombrePoint) {
-		this.m_suitePoint = new LinkedList() ;
+		this.m_suitePoint = new LinkedList<Point>() ;
 	}
 	
 	public void add(Point p) {
@@ -18,6 +18,9 @@ public class LigneBrisee {
 		
 	}
 	
+	public LinkedList<Point> getLigne() {
+		return this.m_suitePoint ; 
+	}
 
 	
 	public int nbPoint() {
