@@ -1,4 +1,14 @@
 ---Exercice1---
+4/mvn -v la version installé est la version 3.6.3
+
+5/
+- Le groupId est l'identifiant du groupe, à l'origine du projet. GroupId suit les mêmes règles de nommage que les packages
+- L'artifactId est l'identifiant du projet au sein de ce groupe.
+source : https://java.developpez.com/faq/maven/?page=Terminologie-et-documentation#Qu-est-ce-que-le-groupId-artifactId 
+6/
+Ils contient toutes les classes compilée , 
+Ce dossier /target contient les classes compilées, vous y trouverez également notre JAR exécutable avec un nom sous la forme <artifactId>-<version>.<extension>
+source : https://gokan-ekinci.developpez.com/tutoriels/java/introduction-bien-debuter-avec-maven/
 
 5/On voit la modification qu'on a effectué après le commit 
 
