@@ -30,4 +30,9 @@ public class World extends Observable {
 	public int getHauteur() {
 		return this.m_hauteur ; 
 	}
+	
+	public void worldChanged() {
+		this.setChanged();
+		this.notifyObservers();
+	}
 }

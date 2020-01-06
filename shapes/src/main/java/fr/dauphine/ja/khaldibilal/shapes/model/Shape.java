@@ -13,8 +13,9 @@ public abstract class Shape  {
 	public ShapeDrawable getDraw() {
 		return this.m_monDessin ; 
 	}
+	public abstract boolean  contains(Point p) ; 
 	
-
+	public abstract void translate(int dx , int dy) ; 
 	
 
 }

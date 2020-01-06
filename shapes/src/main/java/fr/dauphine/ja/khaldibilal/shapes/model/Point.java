@@ -52,8 +52,15 @@ public class Point extends Shape{
 		
 	}
 	
-	public Point translate(int dx , int dy) {
-		return new Point(this.x+dx , this.y+dy) ;
+	public void translate(int dx , int dy) {
+		this.x+=dx ; 
+		this.y+=dy ; 
+	}
+
+	@Override
+	public boolean contains(Point p) {
+		// TODO Auto-generated method stub
+		return this.isSameAs(p) ; 
 	}
 
 
