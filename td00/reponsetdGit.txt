@@ -10,5 +10,31 @@ Ils contient toutes les classes compilée ,
 Ce dossier /target contient les classes compilées, vous y trouverez également notre JAR exécutable avec un nom sous la forme <artifactId>-<version>.<extension>
 source : https://gokan-ekinci.developpez.com/tutoriels/java/introduction-bien-debuter-avec-maven/
 
+
+8/
+Le classpath permet de préciser au compilateur et à la JVM où ils peuvent trouver les classes dont ils ont besoin pour la compilation
+et l'exécution d'une application. C'est un ensemble de chemins vers des répertoires ou des fichiers jar dans lequel l'environnement d'exécution Java recherche les classes (celles de l'application mais aussi celles de tiers)
+et éventuellement des fichiers de ressources utiles à l'exécution de l'application. Ces classes ne concernent pas celles fournies par l'environnement d'exécution incluses dans le fichier rt.jar qui est implicitement utilisé par l'environnement.
+source : https://www.jmdoudoux.fr/java/dej/chap-techniques-base.htm
+
+13/
+Cette propriétes sert à indiquer à maven pour quel version de JVM compiler les classes , dans l'ideal la version la plus basse afin que de notre programme soit executable sur le plus de station possible.
+---Exercice3---
+
+3/
+Eclipse arrive à determiner qu'on fait references avec la methode statique System.out.println() avec l'option d'autocompletion 
+4/
+Methode toString qui pour le coup n'est pas statique mais eclipse la propose quand meme 
+5/
+Propose la methode main 
+6/
+Cela propose la methode getField et pour set cela ne propose rien , probablement du au fait que nous avons pas de getter ou setter dans la classe donc aucune methode de ce nom pour recuperer le champs toto(qui est accessible dans la classe sans getter ou setter)
+7/
+Cela propose de refactor la classe utile lors du changement du nom d'une classe , permet de mettre à jour toutes les referecnes de cette classe dans le projet 
+8/
+Eclipse nous propose de voir l'implementation de la classe String et lorsque qu'on clique on peut consulter la classe String
+
+---Exercice4---
+
 5/On voit la modification qu'on a effectué après le commit 
 
