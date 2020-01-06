@@ -1,6 +1,6 @@
-package fr.dauphine.ja.khaldibilal.shapes;
+package fr.dauphine.ja.khaldibilal.shapes.model;
 
-public class Circle {
+public class Circle extends Shape{
 	private Point m_monCentre ; 
 	private int m_rayon ; 
 	
@@ -15,7 +15,7 @@ public class Circle {
 	}
 	
 	public void translate(int dx , int dy) {
-		this.m_monCentre = m_monCentre.translate(dx, dy) ; 
+		m_monCentre.translate(dx, dy) ; 
 		
 		
 	}
