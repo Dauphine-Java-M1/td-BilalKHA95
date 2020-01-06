@@ -1,5 +1,6 @@
 package fr.dauphine.ja.khaldibilal.td00;
 
+import java.io.ObjectInputStream.GetField;
 import java.nio.charset.MalformedInputException;
 import java.util.ArrayList;
 import java.util.Random ;
@@ -10,6 +11,7 @@ import java.util.Random ;
 public class PrimeCollection 
 {
 	private ArrayList<Integer> numbers ; 
+	 
 	
 	public static void main(String args[]) {
 		PrimeCollection test = new PrimeCollection() ; 
@@ -18,6 +20,8 @@ public class PrimeCollection
 		
 		
 		
+		
+		String a ; 
 	}
 	
 	public PrimeCollection() {
@@ -29,6 +33,7 @@ public class PrimeCollection
 		for(int i =0 ; i <n ; i++) {
 			Random monAlea = new Random() ; 
 			this.numbers.add(monAlea.nextInt(m+1));
+			
 		}
 	}
 	public boolean isPrime(int p ) {

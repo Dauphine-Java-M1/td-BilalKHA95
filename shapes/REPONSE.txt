@@ -21,7 +21,7 @@ Ici oui on doit implementer un getter
 
 ---Exercice2---
 
-1/ Afficher true et false car l'opérateur == compare les refendes des objets(adresse) et non pas les attributs 
+1/ Afficher true et false car l'opérateur == compare les references des objets(adresse) et non pas les attributs 
 
 3/Le problème est qu'il trouve l'objet P2 car il a la meme reference que l'objet P1 mais pas P3 car maigre qu'il est les meme coordonnées il ont des références différentes 
 indexOf utilise la méthode equals il faut donc redéfinir la méthode equals pour comparer non pas aux niveau des references mais au niveau des attributs.
