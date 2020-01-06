@@ -34,7 +34,17 @@ Cela propose de refactor la classe utile lors du changement du nom d'une classe 
 8/
 Eclipse nous propose de voir l'implementation de la classe String et lorsque qu'on clique on peut consulter la classe String
 
----Exercice4---
+TD00-GIT/Junit
+---Exercice1---
 
-5/On voit la modification qu'on a effectué après le commit 
+5/On voit la modification qu'on a effectué après le premier commit 
+
+---Exercice2---
+5/Le push est rejetée
+7/Il y'aurait eu un conflit car les modification serait à la meme ligne donc git ne saurait pas qeulle version conserver 
+
+---Exercice3---
+
+
+
 
