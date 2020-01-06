@@ -45,6 +45,8 @@ TD00-GIT/Junit
 
 ---Exercice3---
 
+2/
+On observe que les test ne sont pas vérifiée en effet la methode assertTrue attend une en argument vrai pour dire que le test est positif en mettant assertTrue(false) on dit que le test n'est pas vérifiée 
 
 
 
