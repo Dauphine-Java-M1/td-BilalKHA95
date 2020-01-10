@@ -65,9 +65,9 @@ Les composants awt sont considérés comme lourds (on dit aussiHeavyWeight) car 
 
 ---------------Exercice2----------------
 
-
-
 3/ Il faut creer une classe pour la nouvelle forme et définir son contrat à l'aide d'une classe associée dans la vue de dessin en implementant le la methode paint
+
+----------Exercice3--------------------
 
 
 

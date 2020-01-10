@@ -14,7 +14,7 @@ public class PointTest {
 		System.out.println(p1==p2);
 		System.out.println(p1==p3);
 		
-		ArrayList<Point> list = new ArrayList<>();
+		ArrayList<Point> list = new ArrayList<Point>();
 		list.add(p1);
 		System.out.println(list.indexOf(p2));
 		System.out.println(list.indexOf(p3));
