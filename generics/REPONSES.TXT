@@ -1,2 +1,9 @@
 1/ On peut utiliser la syntaxe ... afin de prendre en argument un nombre d'arguments variables de type int 
 2/On peut declarer le premier argyment directement et ensuite le tableau variables ... qui peut etre vide 
+4/L'interface Comparable<T> permet de définir la comparaison entre différents objets,en fonction des valeur de retour 0,1,-1 on peut déterminer comment définir l'égalité la superiorite et inferieur 
+
+Exercice 2 - 
+1 / Car les type parametree differe malgre que les String est un sous-type d'object 
+2 / On peut utiliser un type parametrée ou alors un wildcards directement en arguments
+
+
