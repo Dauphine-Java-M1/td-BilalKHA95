@@ -3,58 +3,54 @@ package fr.dauphine.ja.khaldibilal.iterables;
 import java.util.AbstractList;
 import java.util.Iterator;
 
-public class Panel extends AbstractList {
-	
-	
-	
-	public static Iterator<Integer> panel1( final int borneinf , final int bornesup){
+public class Panel {
+	public static Iterator<Integer> panel1(final int borneinf, final int bornesup) {
 		return new Iterator<Integer>() {
-			private int i = borneinf ; 
+			private int i = borneinf;
 
 			public boolean hasNext() {
-				if(i<= bornesup) {
-					return true ; 
-				}
-			
-				return false;
+				return (i <= bornesup);
 			}
 
 			public Integer next() {
-				if(hasNext()) {i++;return new Integer(i);}
-				else return null ;
-				
+				i++;
+				return new Integer(i - 1);
 			}
-			
 		};
-		
-		
 	}
-	
-	public static Iterable<Integer>panel2(final int borneinf , final int bornesup){
+
+	public static Iterable<Integer> panel2(final int borneinf, final int bornesup) {
 		return new Iterable<Integer>() {
-
 			public Iterator<Integer> iterator() {
-				return panel1(borneinf,bornesup) ; 
+				return panel1(borneinf, bornesup);
 			}
-			
 		};
+	}
+
+	public static AbstractList<Integer> panel(final int borneinf, final int bornesup) {
+		if(borneinf > bornesup) throw new IllegalArgumentException() ; 
 		
+		return new AbstractList<Integer>() {
+			@Override
+			public Integer get(int index) {
+				if (borneinf + index <= bornesup) {
+					return borneinf + index;
+				} else {
+					throw new IndexOutOfBoundsException();
+				}
+			}
+
+			@Override
+			public int size() {
+				return bornesup - borneinf +1;
+			}
+		};
 	}
 
-	@Override
-	public Object get(int index) {
-		// TODO Auto-generated method stub
-		return null;
+	public static void main(String[] args) {
+		AbstractList<Integer> it = panel(3, 6);
+		for (Integer itt : it) {
+			System.out.println(itt);
+		}
 	}
-
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-
-
-
-
 }
