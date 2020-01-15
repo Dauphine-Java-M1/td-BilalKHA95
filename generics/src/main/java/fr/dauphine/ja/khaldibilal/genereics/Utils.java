@@ -2,6 +2,7 @@ package fr.dauphine.ja.khaldibilal.genereics;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Utils {
@@ -33,20 +34,34 @@ public class Utils {
 		}
 		return ret;
 	}
-	
-	private static ArrayList<Integer> listLengthh(List<? extends CharSequence> list){
+
+	private static ArrayList<Integer> listLengthh(List<? extends CharSequence> list) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for (CharSequence elem : list) {
 			ret.add(elem.length());
 		}
 		return ret;
-		
 	}
-	
+
+	private static <T> ArrayList<T> fusion(List<? extends T> l1, List<? extends T> l2) {
+		Iterator<? extends T> t1 = l1.iterator();
+		Iterator<? extends T> t2 = l2.iterator();
+		ArrayList<T> fusion = new ArrayList<T>();
+		while (t1.hasNext()) {
+			fusion.add(t1.next());
+			fusion.add(t2.next());
+		}
+		return fusion ; 
+	}
 
 	public static void main(String[] args) {
-		System.out.println(myMax(8.6, 16.64));
-		List<String> list = Arrays.asList("foo", "toto");
-		print(list);
+		List<String> l1= Arrays.asList("C", "rc");
+		List<StringBuilder> l2= Arrays.asList(new StringBuilder("a ma"), new StringBuilder("he!"));
+		List<? extends CharSequence> r1=fusion(l1,l2);
+		List<?> r2=fusion(l1,l2);
+		List<Integer> l3 = Arrays.asList(1,2);
+		List<Integer> l4 = Arrays.asList(10,20);
+		List<Integer> r3 = fusion(l3,l4);
+		List<?> r4 = fusion(l1,l3);
 	}
 }

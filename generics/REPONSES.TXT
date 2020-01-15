@@ -7,3 +7,5 @@ Exercice 2 -
 2 / On peut utiliser un type parametrée ou alors un wildcards directement en arguments
 
 
+Exercice 4 - 
+La complexité est n car j'ai utilisé un iterator donc je ne parcours la liste qu'une fois pour acceder à un element sans iterateur je devrai a chaque fois parcourir la liste du début jusqu'a l'indice i alors la complexité serait de n carré 
