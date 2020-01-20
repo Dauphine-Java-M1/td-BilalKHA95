@@ -19,10 +19,16 @@ public class MouseController implements MouseMotionListener, MouseListener {
 	}
 
 	public void mouseDragged(MouseEvent e) {
+		if(this.m_selectedShape != null) {
+			this.m_selectedShape.translate(this.m_now.getX() - this.m_pred.getX(), this.m_now.getY() - this.m_pred.getY());
+			System.out.println(this.m_selectedShape);
+			this.m_world.worldChanged();
+			
+		}else {
+			System.out.println("Cliquer sur une forme pour la déplacer");
+		}
 
-		this.m_selectedShape.translate(this.m_now.getX() - this.m_pred.getX(), this.m_now.getY() - this.m_pred.getY());
-		System.out.println(this.m_selectedShape);
-		this.m_world.worldChanged();
+		
 		this.m_pred = this.m_now ; 
 		this.m_now = new Point(e.getX() , e.getY()) ; 
 	}
@@ -30,17 +36,20 @@ public class MouseController implements MouseMotionListener, MouseListener {
 	public void mouseMoved(MouseEvent e) {
 		this.m_pred = this.m_now ; 
 		this.m_now = new Point(e.getX() , e.getY()) ; 
+		this.m_selectedShape=null ; 
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		
 		this.m_now = new Point(e.getX() , e.getY()) ; 
-		
+		boolean found = false ; 
 		for (Shape s : this.m_world.getShapes()) {
-			if (s.contains(m_now))
+			if (s.contains(m_now)) {
 				this.m_selectedShape = s;
-			break;
+			found = true ;
+			break;}
 		}
+		if(!found)this.m_selectedShape=null ; 
 	}
 
 	public void mousePressed(MouseEvent e) {
