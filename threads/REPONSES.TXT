@@ -1,0 +1,15 @@
+Exercice 1 
+5/On constate que la valeur de n n'est pas egale à 10000 les itération sont effectué dans l'ordre de l'ordonnanceur qui peut  couper l'execution d'un thread lors de l'execution d'un thread on peutr donc se retrouver avec un nombre indeterminée d'iteration meme supérieur à 10000
+Exercice 2 
+1/
+Je prefere utiliser la delegation car je ne souhaite pas modifier le comportement de la liste juste proteger les ajouts dans celle-ci ainsi que lecture
+3/
+Non mais on doit s'assurer qu'il n'y a aucun ajout pendant cette lecture pour garantir une fiabilité lorsque on récupere des valeurs de cette liste 
+4/
+On peut ajouter des variables lecteurs/Modificateurs et si un lecteur veut lite il vérifie qu'il n'y aucun redacteur sinon il se met en attente jusqu'a que les redacteurs le reveille via notifyAll()
+5/
+Non dans le cas d'un flot continu de lecteurs par exemple il ne laisseront jamais la main aux redacteurs , elle n'est pas equitable car on a acucun controle sur quels thread va récuperer le monitor au prochain reveil.
+
+Exercice 3 
+ 6/
+ A partir d'une taille de vecteur de 100 000 il y'a un reel gain de temps de l'ordre de 2x plus rapide 
